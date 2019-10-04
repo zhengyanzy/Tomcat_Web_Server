@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <!--配置servlet-->
+    <servlet>
+        <!--配置servlet类路径,servlet-name任意,servlet-class是一开始创建的servlet类的路径-->
+        <servlet-name>ServletDemo</servlet-name>
+        <servlet-class>com.zy.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <!--servlet-name必须和上面的名字一样,url-pattern配置访问的路由 localhost:8080/my-->
+    <servlet-mapping>
+        <servlet-name>ServletDemo</servlet-name>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <!--配置servlet类路径,servlet-name任意,servlet-class是一开始创建的servlet类的路径-->
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.zy.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <!--servlet-name必须和上面的名字一样,url-pattern配置访问的路由 localhost:8080/my-->
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+</web-app>

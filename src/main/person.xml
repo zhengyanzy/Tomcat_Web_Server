@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persions>
+    <person>
+        <name>小明</name>
+        <age>18</age>
+    </person>
+    <person>
+        <name>小花</name>
+        <age>17</age>
+    </person>
+</persions>
